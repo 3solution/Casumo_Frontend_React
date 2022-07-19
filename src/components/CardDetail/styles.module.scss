@@ -1,0 +1,35 @@
+.formWrapper {
+  @apply absolute bottom-0 left-0 w-full flex flex-col z-20 py-4 px-5 bg-white rounded-t-md;
+
+  .closeBtnWrapper {
+    @apply text-right;
+  }
+
+  .title {
+    @apply mb-5 text-base font-bold text-dark-90;
+  }
+
+  .itemWrapper {
+    @apply mt-5;
+
+    .title {
+      @apply block text-sm font-bold text-dark-90 mb-0;
+    }
+
+    .error {
+      @apply text-sm text-rose;
+    }
+  }
+
+  .confirmBtn {
+    @apply w-full py-3 mt-5 font-medium text-white rounded-lg bg-indigo-30;
+  }
+
+  .deleteBtn {
+    @apply py-3 mt-1 font-medium text-dark-10;
+  }
+}
+
+.area {
+  @apply absolute bottom-0 left-0 z-10 w-full h-full bg-dark-60 opacity-60;
+}

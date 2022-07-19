@@ -1,0 +1,19 @@
+.wrapper {
+  @apply relative flex flex-col h-screen max-w-xl px-5 py-8 mx-auto;
+
+  .title {
+    @apply text-lg font-bold text-indigo-30;
+  }
+
+  .description {
+    @apply mt-1 text-sm font-medium text-dark-30;
+  }
+
+  .cards {
+    @apply flex-1 mt-8 space-y-2 overflow-y-auto;
+  }
+
+  .newBtn {
+    @apply py-3 font-medium text-white rounded-lg bg-indigo-30;
+  }
+}

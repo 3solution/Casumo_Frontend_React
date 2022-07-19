@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'lineto';
+  src: local('lineto'), url(./assets/fonts/lineto-circular-pro-book.woff) format('truetype');
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: "lineto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

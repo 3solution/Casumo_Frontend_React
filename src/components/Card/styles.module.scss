@@ -1,0 +1,51 @@
+.wrapper {
+  @apply relative w-full rounded-sm p-4 space-y-6 flex flex-col justify-between bg-blue;
+
+  &.masterCard {
+    @apply bg-indigo-60;
+  }
+
+  .cardTypeWrapper {
+    @apply flex items-baseline justify-between;
+
+    .logo {
+      @apply flex-1;
+    }
+
+    .cvcWrapper {
+      @apply flex flex-col mx-3;
+
+      .title {
+        @apply text-xs font-extrabold tracking-widest text-right text-dark-60;
+
+        &.masterCard {
+          @apply text-dark-30;
+        }
+      }
+
+      .value {
+        @apply font-bold text-white tracking-widest text-right text-tiny;
+      }
+    }
+  }
+
+  .cardNumberWrapper {
+    @apply flex flex-col gap-y-1;
+
+    .title {
+      @apply font-bold text-white text-tiny;
+    }
+
+    .value {
+      @apply text-tiny font-bold text-dark-60;
+
+      &.masterCard {
+        @apply text-dark-30;
+      }
+    }
+  }
+
+  .editButton {
+    @apply absolute right-4 bottom-5;
+  }
+}
